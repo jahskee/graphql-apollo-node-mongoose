@@ -9,11 +9,12 @@ const typeDefs = `type Author {
 }
     type Query {
         authors: [Author]
-        author(id: String): Author
+        author(id: String): Author     
     }
 
     type Mutation {
-        addAuthor(name: String, age: Int, books: [String]): Author
+        addAuthor(name: String!, age: Int!, books: [String]!): Author
+        deleteAuthor(id: String!): Author
     }
 `;
 
