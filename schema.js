@@ -11,6 +11,10 @@ const typeDefs = `type Author {
         authors: [Author]
         author(id: String): Author
     }
+
+    type Mutation {
+        addAuthor(name: String, age: Int, books: [String]): Author
+    }
 `;
 
 const schema = makeExecutableSchema({typeDefs, resolvers})
