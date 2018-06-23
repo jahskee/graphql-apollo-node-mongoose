@@ -9,6 +9,7 @@ const typeDefs = `
         name: String
         books: [String]
     }
+
     type Query {
         authors: [Author]
         author(id: String): Author     
@@ -17,8 +18,9 @@ const typeDefs = `
     type Mutation {
         addAuthor(name: String!, age: Int!, books: [String]!): Author
         deleteAuthor(id: String!): Author
+        updateAuthor(id: String, name: String!): Author
     }
-    
+
 `;
 
 const schema = makeExecutableSchema({typeDefs, resolvers})
