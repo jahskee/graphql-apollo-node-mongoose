@@ -1,0 +1,19 @@
+{
+  "name": "graphql01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test":"test",
+    "build": "babel-node server.js"
+  },
+  "repository": "git@github.com:jahskee/graphql-project1.git",
+  "author": "jahskee <jahskee@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
