@@ -18,6 +18,10 @@ server.use('/graphiql', graphiqlExpress({
 
 server.use('/graphql', bodyParser.json(), graphqlExpress({schema}))
 
+
+// connect to database with mongoose
+require("./components/utils/dbconnect");
+
 server.listen(4000, () => {
     console.log("listening on port 4000")
 })
