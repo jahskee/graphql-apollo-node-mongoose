@@ -25,3 +25,19 @@ const resolvers = {
 }
 
 export default resolvers;
+/*
+mutation {
+  addAuthor(name: "Jaizon", age: 39, books:["React Experts"])
+}
+
+mutation {
+  updateAuthor(id:"ca6d7200-771c-11e8-87d9-27785d83f20b",name:"Jaizon Lubaton"){
+    name
+  }
+}
+mutation {
+  deleteAuthor(id: "0c66c480-770a-11e8-ba78-814d480f1a61") {
+    name
+  }
+}
+*/
